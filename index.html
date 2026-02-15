@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>AI Learning Assistant</title>
+  </head>
+  <body>
+  <div class="container">
+    <header>
+    <h1>Geographic Learning Assistant</h1>
+    </header>
+    <main>
+        <form id="guide-generator-form">
+          <input
+            type="text"
+            placeholder="Ask something about a country..."
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+            id="user-instructions"
+
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="hint">ex: Capital, Language, Ancient place, or Mountains</div>
+        <div class="guide hidden" id="guide"></div>
+
+    </main>
+    <footer>
+      This AI project was coded by
+      <a href="https://github.com/45zaki/" target="_blank">Zakia Pezhman</a> and
+      is
+      <a
+        href="https://github.com/45zaki/persian-ai-poem-generator"
+        target="_blank"
+      >
+        open-sourced on GitHub</a
+      >
+      and is
+      <a href="https://persian-ai-poam-generator.onrender.com" target="_blank"
+        >hosted on Render</a
+      >
+    </footer>
+    </div>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>
