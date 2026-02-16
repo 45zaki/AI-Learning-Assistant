@@ -22,7 +22,7 @@ function generateGuide(event) {
 
   let guideElement = document.querySelector("#guide");
   guideElement.classList.remove("hidden");
-  guideElement.innerHTML = `⏳ Generating a tour plan for ${instructionsInput.value}...`;
+  guideElement.innerHTML = `⏳ Generating a geographical info a bout ${instructionsInput.value}...`;
 
   axios.get(apiURL).then(showGuide);
 }
