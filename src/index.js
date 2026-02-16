@@ -13,7 +13,7 @@ function generateGuide(event) {
 
   let instructionsInput = document.querySelector("#user-instructions");
   let apiKey = "f92fe2190a73t0c3474809d37ba10o1b";
-  let context = "You are a friendly geography teacher at a learning app, answer ONLY geography-related questions about countries, ignore requests which is not geography-related, respond exactly like I only provide geography-related information about countries, generate one short factual and educational paragraph in basic HTML only, do NOT use markdown or include a title, end with a safe external link (e.g., Britannica or Wikipedia), then add a <br /> before this line: <strong>SheCodes AI</strong>.";
+  let context = "You are a friendly geography teacher at a learning app, answer ONLY geography-related questions about countries, ignore requests which is not geography-related, respond exactly like I only provide geography-related information about countries, generate one short factual and educational paragraph in basic HTML only, do NOT use markdown or include a title. End with a safe external link (e.g., Britannica or Wikipedia), then add a <br /> before this line: <strong>SheCodes AI</strong>.";
   let prompt = `Please provide information about ${instructionsInput.value}`;
 
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${encodeURIComponent(
